@@ -1,0 +1,52 @@
+{
+  "name": "package-author",
+  "version": "0.0.0",
+  "description": "Returns the project author in package.json",
+  "homepage": "https://github.com/vandeurenglenn/package-author",
+  "author": {
+    "name": "Glenn Vandeuren",
+    "email": "vandeurenglenn@gmail.com",
+    "url": ""
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "keywords": [
+    "author",
+    "package-author"
+  ],
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-eslint": "^4.1.8",
+    "babel-preset-es2015": "^6.9.0",
+    "del": "^2.0.2",
+    "eslint": "^2.1.0",
+    "eslint-config-xo-space": "^0.10.0",
+    "eslint-plugin-babel": "^3.1.0",
+    "estraverse-fb": "^1.3.1",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-coveralls": "^0.1.0",
+    "gulp-eslint": "^2.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-mocha": "^2.0.0",
+    "gulp-nsp": "^2.1.0",
+    "gulp-plumber": "^1.0.0",
+    "isparta": "^3.0.3"
+  },
+  "eslintConfig": {
+    "extends": "xo-space/esnext",
+    "env": {
+      "mocha": true
+    }
+  },
+  "repository": "VandeurenGlenn/package-author",
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
+  "license": "MIT"
+}
