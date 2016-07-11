@@ -12,10 +12,6 @@ const babel = require('gulp-babel');
 const del = require('del');
 const isparta = require('isparta');
 
-// Initialize the babel transpiler so ES2015 files gets compiled
-// when they're loaded
-require('babel-core/register');
-
 gulp.task('static', () => {
   return gulp.src('**/*.js')
     .pipe(excludeGitignore())
