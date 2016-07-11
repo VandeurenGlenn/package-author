@@ -1,6 +1,6 @@
 {
   "name": "package-author",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Returns the project author in package.json",
   "homepage": "https://github.com/vandeurenglenn/package-author",
   "author": {
@@ -45,8 +45,8 @@
   },
   "repository": "VandeurenGlenn/package-author",
   "scripts": {
-    "prepublish": "gulp prepublish",
-    "test": "gulp"
+    "release": "gulp",
+    "test": "gulp test"
   },
   "license": "MIT"
 }
