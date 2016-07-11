@@ -14,6 +14,9 @@ export default class PackageAuthor {
     } catch (err) {
       console.warn(err);
     }
+    if (!author) {
+      console.warn('no author found in package.json go to https://docs.npmjs.com/getting-started/using-a-package.json for more info');
+    }
     return author;
   }
 
